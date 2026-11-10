@@ -25,7 +25,7 @@ git clone https://github.com/CyberBoyNitin/BerrelEye.git
 cd BerrelEye
 cp .env.example .env
 docker compose -f docker-compose.release.yml up -d
-# pin a version: BERRELEYE_VERSION=v1.0.0 docker compose -f docker-compose.release.yml up -d
+# pin a version: BERRELEYE_VERSION=1.0.0 docker compose -f docker-compose.release.yml up -d
 ```
 
 - Gateway: http://localhost:8080 (`/health`, `/ready`, `/v1/*`)
@@ -98,8 +98,8 @@ git tag v1.0.0
 git push origin v1.0.0
 ```
 
-After the first release, make the three GHCR packages public (package
-settings → Change visibility → Public) so anonymous `docker pull` works.
+The three images are published publicly to GHCR as
+`ghcr.io/cyberboynitin/berreleye-{gateway,ml-service,web}`.
 Users then run `docker compose -f docker-compose.release.yml up -d`.
 
 ## Testing

@@ -70,6 +70,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Prepare release assets
+        run: cp .env.example env.example
       - name: Create release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -77,4 +79,4 @@ jobs:
           gh release create "${GITHUB_REF_NAME}" \
             --title "BerrelEye ${GITHUB_REF_NAME}" \
             --generate-notes \
-            docker-compose.release.yml .env.example
+            docker-compose.release.yml env.example
