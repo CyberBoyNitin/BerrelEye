@@ -8,7 +8,7 @@ const columns = [
     links: [
       { href: "/#proof", label: "How it works" },
       { href: "/#modes", label: "Routing modes" },
-      { href: "/#estimate", label: "Estimate savings" },
+      { href: "/#estimate", label: "Cost estimator" },
       { href: "/dashboard/overview", label: "Dashboard" },
       { href: "/docs", label: "Docs" },
     ],

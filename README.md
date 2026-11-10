@@ -6,6 +6,9 @@ Companies point their existing OpenAI-compatible traffic at BerrelEye.
 We observe usage, calculate real costs, find cheaper routes, enforce
 security/caching/budgets, and prove savings in the dashboard.
 
+BerrelEye is free and open source (MIT). Self-host it — there is no
+subscription, per-request fee, or payment to use it.
+
 ## Quickstart (Docker)
 
 ### From source
@@ -76,10 +79,10 @@ docs/             architecture, api, deployment, security
 scripts/          seed helpers, load test (k6-style node script)
 ```
 
-## Implementation status vs prompt.md
+## Scope and status
 
-- Phases 1–20 implemented in V1 scope; Kubernetes/Kafka/SSO/custom
-  vector DB/complex billing intentionally deferred per §65.
+- Phases 1–20 implemented in V1 scope; Kubernetes/Kafka/SSO and custom
+  vector DB support are out of scope.
 - Anthropic streaming replays deltas (documented in providers/anthropic.go).
 - Semantic cache: exact-cache primary; pgvector similarity gated behind
   org opt-in + threshold + compatible params (§23–24).

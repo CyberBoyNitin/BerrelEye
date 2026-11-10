@@ -115,7 +115,7 @@ export default function LandingPage() {
                       href="/signup"
                       className="group inline-flex min-h-[48px] items-center gap-2 rounded-full bg-accent px-7 text-base font-semibold text-accent-ink transition-[background-color] hover:bg-accent-strong active:scale-[0.98]"
                     >
-                      Start saving
+                      Get started
                       <ArrowRight size={18} aria-hidden="true" className="transition-transform duration-200 ease-out group-hover:translate-x-1" />
                     </Link>
                   </Magnetic>
@@ -128,7 +128,7 @@ export default function LandingPage() {
                   </Link>
                 </div>
                 <p className="mt-5 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-3">
-                  Self-host with Docker · No SDK changes
+                  Free &amp; open source · Self-host with Docker · No SDK changes
                 </p>
               </div>
             </div>
@@ -325,7 +325,7 @@ export default function LandingPage() {
                     Asked before you ask
                   </h2>
                   <p className="mt-3 max-w-md text-sm leading-6 text-ink-2">
-                    Straight answers from the documented behavior — no sales layer.
+                    Straight answers from the documented behavior.
                   </p>
                 </ScrollReveal>
               </div>
@@ -355,7 +355,7 @@ export default function LandingPage() {
                         href="/signup"
                         className="group inline-flex min-h-[48px] items-center gap-2 rounded-full bg-[#FAFAFA] px-7 text-base font-semibold text-[#0A0A0A] transition-[transform,opacity] hover:opacity-85 active:scale-[0.98]"
                       >
-                        Start saving
+                        Get started
                         <ArrowRight size={18} aria-hidden="true" className="transition-transform duration-200 ease-out group-hover:translate-x-1" />
                       </Link>
                     </Magnetic>

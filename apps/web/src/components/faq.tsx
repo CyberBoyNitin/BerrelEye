@@ -9,6 +9,10 @@ import { Minus, Plus } from "@phosphor-icons/react";
 
 const ITEMS = [
   {
+    q: "Is BerrelEye free to use?",
+    a: "Yes. BerrelEye is open source under the MIT license and runs on your own infrastructure. There is no subscription, per-request fee, or payment to use it — you only pay your LLM provider for the traffic you send.",
+  },
+  {
     q: "Does BerrelEye change which model answers my users?",
     a: "Not unless you ask it to. The default SHADOW mode keeps your requested model and only records what a cheaper route would have done. Switch a policy to AUTO when the rows convince you — every reroute carries recorded reasons.",
   },

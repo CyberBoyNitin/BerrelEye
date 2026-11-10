@@ -113,7 +113,7 @@ export default function DocsPage() {
             </Section>
 
             <Section id="models" title="Models">
-              <p><code className={CODE}>GET /v1/models</code> lists enabled registry entries with pricing (per 1M tokens), context window, capabilities, and quality/latency tiers. Cost math: <code className={CODE}>input/1M × input_price + output/1M × output_price</code>. Missing provider usage is estimated and marked as estimated.</p>
+              <p><code className={CODE}>GET /v1/models</code> lists enabled registry entries with model cost rates (per 1M tokens), context window, capabilities, and quality/latency tiers. Cost math: <code className={CODE}>input/1M × input_price + output/1M × output_price</code>. Missing provider usage is estimated and marked as estimated.</p>
               <Pre code={`curl ${API}/v1/models -H "Authorization: Bearer $BERRELEYE_KEY"`} />
             </Section>
 

@@ -58,7 +58,7 @@ export function SiteHeader() {
                 href="/signup"
                 className="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-md bg-accent px-3 text-[13px] font-semibold text-accent-ink transition-[transform,background-color] hover:bg-accent-strong active:scale-[0.98] sm:px-4"
               >
-                Start saving
+                Get started
               </Link>
             </Magnetic>
             <button
