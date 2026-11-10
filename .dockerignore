@@ -1,0 +1,46 @@
+# Build context is the repository root for the gateway image.
+.git
+.github
+.gitignore
+.gitattributes
+.editorconfig
+
+# Secrets and local env
+.env
+.env.*
+!.env.example
+
+# Docs and design artifacts are not needed in images
+docs
+.design
+*.md
+!apps/gateway/README.md
+
+# JavaScript / Next.js
+**/node_modules
+**/.next
+**/out
+**/build
+**/*.tsbuildinfo
+apps/web/next-env.d.ts
+
+# Python
+**/__pycache__
+**/*.py[cod]
+**/.pytest_cache
+**/.venv
+**/venv
+
+# Go build artifacts
+apps/gateway/server
+apps/gateway/server.exe
+*.exe
+*.test
+*.out
+
+# Logs, screenshots, OS noise
+**/*.log
+**/*.png
+**/*.jpg
+.DS_Store
+Thumbs.db

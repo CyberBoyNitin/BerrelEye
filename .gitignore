@@ -1,0 +1,53 @@
+# Secrets — never commit local environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# Local design-review workspace and raw screenshots
+.design/
+/*.png
+/*.jpg
+/*.jpeg
+
+# Go
+apps/gateway/server
+apps/gateway/server.exe
+*.exe
+*.test
+*.out
+coverage.out
+coverage.html
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+build/
+dist/
+*.tsbuildinfo
+next-env.d.ts
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
+
+# Local databases / temp files
+*.sqlite
+*.db
+tmp/
